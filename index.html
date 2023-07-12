@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nate Underhill</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dc65981df3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header-section">
+      <!-- Nav Bar -->
+
+      <!-- Header/Main Picture -->
+      <div class="header">
+        <div class="header-heading-container">
+          <div class="split-letters">
+            <b class="N first-letter">N</b><b class="N">a</b><b class="N">t</b
+            ><b class="N">h</b><b class="N">a</b><b class="N">n</b> <br />
+          </div>
+          <div class="split-letters2">
+            <b class="N">U</b><b class="N">n</b><b class="N">d</b
+            ><b class="N">e</b><b class="N">r</b><b class="N">h</b
+            ><b class="N">i</b><b class="N">l</b><b class="N">l</b>
+          </div>
+
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/nathan-underhill/
+
+          "
+            ><i class="linked-in fa-brands fa-linkedin"></i
+          ></a>
+
+          <a href="mailto: nunderhill@uvic.ca"
+            ><i class="envelope fa-solid fa-envelope"></i
+          ></a>
+
+          <div class="resume-section">
+            <a class="resume-icon" href=""
+              ><i class="fa-solid fa-file-arrow-down"></i
+            ></a>
+
+            <h2 class="resume-text">
+              DOWNLOAD<br />
+              RESUME
+            </h2>
+          </div>
+        </div>
+
+        <div class="image">
+          <img
+            class="header-image"
+            src="images/myself_no background.png"
+            alt=""
+          />
+        </div>
+
+        <div class="quote">
+          <p class="introduction-text">Introduction</p>
+          <p>
+            Welcome to my Personal Portfolio. My name is
+            <span class="name-bold">Nathan Underhill</span> and I am a second
+            year Mechanical Engineering student at the University of Victoria. I
+            appreciate you checking out my website and I hope you enjoy!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="about-main">
+      <div class="nav-section">
+        <div class="nav">
+          <ul class="nav-list">
+            <li
+              class="nav-item tab-links active-link"
+              onclick="opentab('about_me')"
+            >
+              About Me
+            </li>
+            <li class="nav-item tab-links" onclick="opentab('skills')">
+              Skills
+            </li>
+            <li class="nav-item tab-links" onclick="opentab('experience')">
+              Experience
+            </li>
+            <li class="nav-item tab-links">Projects</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about tab-contents active-tab" id="about_me">
+        <div class="about-me-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, nam.
+          </p>
+        </div>
+        <div class="slide-show">
+          <div class="image-slides">
+            <div class="slides">
+              <!-- radio buttons start -->
+              <input type="radio" name="radio-btn" id="radio1" />
+              <input type="radio" name="radio-btn" id="radio2" />
+              <input type="radio" name="radio-btn" id="radio3" />
+              <input type="radio" name="radio-btn" id="radio4" />
+              <input type="radio" name="radio-btn" id="radio5" />
+              <!-- radio buttons end -->
+              <!-- slide images start -->
+              <div class="slide first">
+                <img src="images/Image3.jpeg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="images/tree.jpeg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="images/sideways.jpeg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="images/Image2.jpeg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="images/beach.jpeg" alt="" />
+              </div>
+              <!-- slide images end -->
+              <!-- automatic naviagtion start -->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+              </div>
+              <!-- automatic naviagtion end -->
+            </div>
+            <!-- manual navigation start -->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+              <label for="radio5" class="manual-btn"></label>
+            </div>
+            <!-- manual navigation end -->
+          </div>
+        </div>
+      </div>
+
+      <div class="skills tab-contents" id="skills">
+        <p>hi</p>
+      </div>
+
+      <div class="experience tab-contents" id="experience">
+        <p>hello</p>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="projects-main">
+        <div class="project1 proj"></div>
+        <div class="project2 proj"></div>
+        <div class="project3 proj"></div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      var counter = 1;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+        if (counter > 5) {
+          counter = 1;
+        }
+      }, 4000);
+    </script>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
