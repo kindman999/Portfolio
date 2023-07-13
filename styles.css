@@ -353,7 +353,7 @@ b{
 .nav-list{
     list-style: none;
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.7em;
     display: flex;
     justify-content: space-around;
     transition: 0.2s;
@@ -365,7 +365,7 @@ b{
 
 div ul li{
     transition: transform 0.3s;
-    padding: 2rem 4rem;
+    padding: 1.5rem 4rem;
      border: 2px solid #7d8394;
      border-radius: 25px;
      background-color: #263446;
@@ -445,8 +445,8 @@ div ul li:hover{
 
 .about-me-text{
     color: #e2dede;
-    font-size: 2rem;
-    margin-left: 9rem;
+    font-size: 2.2rem;
+    margin-left: 10rem;
     margin-top: 15rem;
    
     
@@ -511,9 +511,7 @@ div ul li:hover{
 /* css for manual slide nav */
 
 .navigation-manual {
-position: absolute;
-margin-top: -4rem;
-margin-left: 5rem;
+margin-bottom: 5rem;
 width: 40rem;
 display: flex;
 justify-content: center;
@@ -528,6 +526,7 @@ justify-content: center;
     transition: 0.3s;
     box-shadow: 2px 2px 2px #000;
     transform: scale(1.2);
+    display: none;
 }
 
 .manual-btn:not(:last-child){
@@ -563,6 +562,7 @@ justify-content: center;
     width: 50rem;
     justify-content: center;
     margin-top: 66rem;
+    display: none;
     
 }
 
@@ -593,9 +593,139 @@ justify-content: center;
     background: #1462D4;
 }
 
+.hidden-about{
+    display: none;
+}
 /* Skills */
-
+.skills.active-tab{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+}
 /* Experience */
+
+.technical-skills, .soft-skills{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 8rem;
+  
+    
+}
+
+.technical-skills>h1, .soft-skills>h1{
+color: #fff;
+font-size: 3.5rem;
+font-weight: 500;
+position: relative;
+
+}
+
+
+
+
+@media screen and (max-width: 1500px){
+    .nav-list{
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 1225px){
+    .nav-list{
+        font-size: 1.5rem;
+    }
+  
+}
+
+@media screen and (max-width: 1105px) {
+    .nav{
+        display: none;
+    }
+
+    .hidden-about{
+        display: block;
+        position: relative;
+        font-weight: 500;
+        color: #fff;
+        text-shadow: 0 0 40px #000;
+    }
+    .hidden-about::after{
+        content: '';
+        width: 30%;
+        height: 5px;
+        background-color: #1462D4;
+        position: absolute;
+        left: 0;
+        top: 4rem;
+    }
+
+    .image-slides{
+        margin-top: 0;   
+        height: 50rem;
+     }
+
+     .slide{
+        height: 50rem;
+     }
+.slide>img{
+    height: 50rem;
+    width: 40rem;
+}
+     .about-me-text{
+        margin-top: 0;
+     }
+
+     .skills{
+        display: block;
+     }
+
+     .experience{
+        display: block;
+     }
+}
+
+
+@media screen and (max-width: 883px){
+    .image-slides{
+        margin-top: 0;   
+        height: 30rem;
+        width: 22rem;
+     }
+    .slide{
+        height: 30rem;
+     }
+.slide>img{
+    height: 30rem;
+    width: 22rem;
+}
+
+.about{
+    padding-top: 10rem;
+}
+}
+
+@media screen and (max-width: 700px){
+    .tab-contents.active-tab{
+        grid-template-rows: 0.1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .about-me-text{
+        text-align: center;
+        padding-left: 0;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .image-slides{
+        margin: 0;
+    }
+
+    .hidden-about::after{
+       width: 0;
+    }
+    
+}
 
 /* Projects*/
 
