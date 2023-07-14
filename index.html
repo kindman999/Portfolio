@@ -96,7 +96,9 @@
             <li class="nav-item tab-links" onclick="opentab('experience')">
               Experience
             </li>
-            <li class="nav-item tab-links">Projects</li>
+            <li class="nav-item tab-links" onclick="opentab('projects')">
+              Projects
+            </li>
           </ul>
         </div>
       </div>
@@ -156,29 +158,64 @@
       </div>
 
       <div class="skills tab-contents" id="skills">
-        <div class="technical-skills">
-          <h1>Technical Skills</h1>
-          <div class="languages">
-            <span class="languages-title"
-              ><i class="fa-brands fa-js"></i>Languages</span
-            >
-          </div>
+        <div class="technical-skills-content">
+          <span class="languages-title"
+            ><i class="fa-brands fa-js"></i> Languages</span
+          >
+          <ul class="language-list">
+            <li class="language-item">C</li>
+            <li class="language-item">Java</li>
+            <li class="language-item">Javscript</li>
+            <li class="language-item">Python</li>
+            <li class="language-item">HTML/CSS</li>
+          </ul>
         </div>
-        <div class="soft-skills">
-          <h1>Soft Skills</h1>
+
+        <div class="applications-content">
+          <h1 class="applications-title">
+            <i class="fa-brands fa-microsoft"></i> Applications/Software
+          </h1>
+          <ul class="applications-list">
+            <li class="applications-item">SolidWorks</li>
+            <li class="applications-item">MATLAB</li>
+            <li class="applications-item">Microsoft Office</li>
+            <li class="applications-item">Google Suite</li>
+            <li class="applications-item">Visual Studio Code</li>
+            <li class="applications-item">Arduino IDE</li>
+          </ul>
         </div>
+
+        <div class="soft-skills"></div>
       </div>
 
       <div class="experience tab-contents" id="experience">
         <p>hello</p>
       </div>
-    </section>
 
-    <section class="projects">
-      <div class="projects-main">
+      <div class="projects tab-contents" id="projects">
         <div class="project1 proj"></div>
         <div class="project2 proj"></div>
         <div class="project3 proj"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contact">
+        <div class="contact-me">
+          <h1 class="contact-title">Contact Me</h1>
+          <div class="underline"></div>
+
+          <div class="phone">
+            <p class="phone-number">
+              <i class="contact-envelope fa-solid fa-phone"></i> 250-895-9707
+            </p>
+          </div>
+          <div class="email">
+            <p class="email-address">
+              <i class="fa-solid fa-envelope"></i> nunderhill@uvic.ca
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
