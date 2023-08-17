@@ -356,7 +356,7 @@ b{
     padding: 1rem 4rem;
     
      border-radius: 12px;
-     background-color: #263446;
+     background-color:  #263446;
      box-shadow: 0 0 30px rgba(0,0,0,0.3);;
 }
 
@@ -386,14 +386,16 @@ b{
 
 .nav-item:hover{
     transform: scale(1.05);
-  background-color: #7d8394;
+  background-color: #1462D4;
 }
 
 .active-link{
-    background-color: #7d8394;
+    background-color: #1462D4;
   
     
 }
+
+
 
 /* .nav-list::after{
     content: '';
@@ -435,7 +437,8 @@ b{
     font-size: 2.2rem;
     margin-left: 10rem;
     margin-top: 15rem;
-   
+   line-height: 6rem;
+   margin-right: 3rem;
     
 }
 
@@ -464,8 +467,8 @@ b{
      box-shadow:
       0px 0px 20px rgba(0,0,0,0.5);
      
-     margin-top: 10rem;
-     margin-bottom: 15rem;
+     margin-top: 15rem;
+    margin-bottom: 10rem;
      margin-right: 5rem;
      
 }
@@ -588,7 +591,12 @@ justify-content: center;
 
 .experience.active-tab{
     height: 75rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10rem;
 }
+
+
 .skills.active-tab{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -596,7 +604,7 @@ justify-content: center;
     height: 75rem;
 }
 
-.technical-skills-content, .applications-content{
+.technical-skills-content, .applications-content, .technical-skills{
     display: flex;
     align-items: center;
     flex-direction: column; 
@@ -606,23 +614,51 @@ justify-content: center;
 }
 
 
-.languages-title,.applications-title{
+.languages-title,.applications-title, .technical-skills-title{
     font-size: 3rem;
    font-weight: 400;
    margin: 0;
+   color: #fff;
 }
 
-.language-item, .applications-item{
+.language-item, .applications-item, .technical-item{
     color: #CDD3DA;
     font-size: 2.25rem;
     font-weight: 400;
     margin-top: 3rem;
 }
 
-.language-list{
+.language-list, .applications-list, .technical-list{
     list-style:square;
+    
+}
+.technical-list{
+    margin-left: 10rem;
 }
 
+
+.co-op, .other-work, .extra-curricular{
+    margin-left: 2rem;
+    color: #CDD3DA;
+}
+
+.co-op_title, .general-work, .extra-curricular-title {
+    font-weight: bold;
+    
+    font-size: 2rem;
+}
+
+.experience-subheading{
+    font-size: 1.25rem;
+    color: #263446;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 5rem;
+}
+.experience-title{
+    margin-bottom: 0.2rem;
+    padding-bottom: none;
+}
 
 
 @media screen and (max-width: 1500px){
@@ -635,13 +671,33 @@ justify-content: center;
     .nav-list{
         font-size: 1.5rem;
     }
-  
+
+   
+.languages-title,.applications-title, .technical-skills-title{
+    font-size: 2rem;
+   font-weight: 400;
+   margin: 0;
+   color: #fff;
+}
+
+.language-item, .applications-item, .technical-item{
+    color: #CDD3DA;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 3rem;
+}
+
 }
 
 @media screen and (max-width: 1105px) {
     .nav{
-        display: none;
+            display: none;
     }
+
+    .about{
+        display: block;
+    }
+
 
     .hidden-about{
         display: block;
@@ -663,6 +719,7 @@ justify-content: center;
     .image-slides{
         margin-top: 0;   
         height: 50rem;
+      
      }
 
      .slide{
@@ -674,15 +731,24 @@ justify-content: center;
 }
      .about-me-text{
         margin-top: 0;
+        display: block;
      }
+     
 
      .skills{
         display: block;
+    
      }
 
      .experience{
         display: block;
      }
+     
+
+     .about-main{
+        display: block;
+     }
+    
 }
 
 @media screen and (max-width: 883px){
@@ -723,6 +789,20 @@ justify-content: center;
 
     .hidden-about::after{
        width: 0;
+    }
+
+    .languages-title,.applications-title, .technical-skills-title{
+        font-size: 3rem;
+       font-weight: 400;
+       margin: 0;
+       color: #fff;
+    }
+    
+    .language-item, .applications-item, .technical-item{
+        color: #CDD3DA;
+        font-size: 2.25rem;
+        font-weight: 400;
+        margin-top: 3rem;
     }
     
 }
